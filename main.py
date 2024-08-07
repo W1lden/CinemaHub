@@ -197,7 +197,7 @@ def delete(id):
 
 @app.route('/youtube', methods=["GET", "POST"])
 def youtube():
-    KEY = 'AIzaSyAevR8qG3m3BaWOZTtbCQo1Bu1iid4ZWRM'
+    KEY = 'key'
     URL = 'https://www.googleapis.com/youtube/v3/search'
     key_phrases = ['обзор', 'интересные факты', 'пасхалки', 'разбор персонажей', 'актеры', 'анализ сюжета', 'объяснение концовки', 'лучшие моменты', 'вырезанные сцены', 'саундтреки']
     movies = ['The Amazing Spider-Man 2', 'Pirates of the Caribbean', 'Inception', 'The Godfather', 'Titanic']
@@ -264,7 +264,7 @@ def my_recommendations():
     movies = []
     count = 1
     for id in ids:
-        query = {"api_key": '6160c759fb7623e398533bccaeab98a5', "query": id}
+        query = {"api_key": 'key', "query": id}
         response = requests.get(url=f'https://api.themoviedb.org/3/movie/{id}/recommendations', params=query)
         data = response.json()['results']
         data = data[0:4]
