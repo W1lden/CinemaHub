@@ -14,10 +14,10 @@ from random import choice, randint
 from tmdbv3api import TMDb, Movie
 
 
-TMDB_KEY = '6160c759fb7623e398533bccaeab98a5'
+TMDB_KEY = 'key'
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
+app.config['SECRET_KEY'] = 'key'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///cinemahub.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 bcrypt = Bcrypt(app)
