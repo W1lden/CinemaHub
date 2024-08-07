@@ -3,7 +3,7 @@ from flask import Flask, render_template, redirect, url_for, request
 import openai
 
 
-OPEN_AI_KEY = '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'
+OPEN_AI_KEY = 'key'
 
 app = Flask(__name__)
 
